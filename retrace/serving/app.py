@@ -48,8 +48,15 @@ def main() -> None:
     with st.sidebar:
         st.header("Erasure target")
         targets = engine.list_targets()
-        labels = [f'{t["entity"]}  ({t["group_id"]})' for t in targets]
-        idx = st.selectbox("entity", range(len(targets)), format_func=lambda i: labels[i])
+        # sort groups that already have an eraser adapter to the top
+        ready = {t["group_id"] for t in targets if engine.erasure_available(t["group_id"])}
+        targets.sort(key=lambda t: (t["group_id"] not in ready, t["entity"]))
+        labels = [
+            f'{"* " if t["group_id"] in ready else ""}{t["entity"]}  ({t["group_id"]})'
+            for t in targets
+        ]
+        idx = st.selectbox("entity  (* = eraser ready)", range(len(targets)),
+                           format_func=lambda i: labels[i])
         target = targets[idx]
         gid = target["group_id"]
 
@@ -74,11 +81,21 @@ def main() -> None:
 
     tab_ask, tab_verify, tab_report = st.tabs(["Ask", "Verify", "Report"])
 
+    erased_ready = engine.active_group_id == gid or engine.erasure_available(gid)
+    if not erased_ready:
+        st.warning(
+            f"No eraser adapter for **{target['entity']}** ({gid}) yet. "
+            "Use the sidebar to attach a precomputed one or train it live "
+            "(only G001 / NeuroSync Diagnostics is precomputed by default)."
+        )
+
     with tab_ask:
         st.subheader("Baseline vs erased")
         preset = st.radio("presets", _preset_questions(engine, gid), index=0, horizontal=False)
         q = st.text_input("question", value=preset)
         if st.button("Ask", type="primary"):
+            if engine.active_group_id != gid and engine.erasure_available(gid):
+                engine.attach_erasure(gid)
             ans = engine.ask_both(q)
             c1, c2 = st.columns(2)
             c1.markdown("**Baseline model**")
@@ -89,9 +106,14 @@ def main() -> None:
     with tab_verify:
         st.subheader("Verification")
         existing = engine.verification_report(gid)
-        if st.button("Run verification", type="primary"):
-            with st.spinner("probing baseline and erased models ..."):
-                existing = engine.run_verification(gid)
+        run = st.button("Run verification", type="primary", disabled=not erased_ready)
+        if run:
+            try:
+                with st.spinner("probing baseline and erased models ..."):
+                    existing = engine.run_verification(gid)
+            except Exception as exc:  # noqa: BLE001
+                st.error(f"verification failed: {exc}")
+                existing = None
         if existing:
             s = existing["scores"]
             m1, m2, m3, m4 = st.columns(4)
@@ -129,11 +151,15 @@ def main() -> None:
 
     with tab_report:
         st.subheader("Erasure Report")
-        md = engine.report_markdown(gid)
+        try:
+            md = engine.report_markdown(gid)
+        except Exception as exc:  # noqa: BLE001
+            md = None
+            st.error(f"could not build report: {exc}")
         if md:
             st.markdown(md)
         else:
-            st.info("Run verification first, then the report is generated on demand.")
+            st.info("Run verification first (Verify tab), then the report is generated here.")
 
 
 if __name__ == "__main__":
