@@ -8,6 +8,9 @@ Built for *Retrace: The AI Trust Challenge*.
 Method: **NPO + retain-KL, packaged as a stackable "eraser" LoRA** on
 `Qwen2.5-0.5B-Instruct`.
 
+**Full write-up:** [`docs/technical-report.md`](docs/technical-report.md) —
+architecture, method, first-erasure results, design tradeoffs, and limitations.
+
 ---
 
 ## Pipeline
