@@ -1,0 +1,54 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "retrace"
+version = "0.1.0"
+description = "Fact-level machine unlearning with verifiable erasure"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+
+# Phase 0 (data pipeline) has NO third-party dependencies - standard library only.
+# Heavier phases pull their own extras so a data-only run stays lean on Colab.
+dependencies = []
+
+[project.optional-dependencies]
+train = [
+  "torch>=2.2",
+  "transformers>=4.44",
+  "peft>=0.12",
+  "accelerate>=0.33",
+  "datasets>=2.20",
+]
+serve = [
+  "fastapi>=0.111",
+  "uvicorn>=0.30",
+  "streamlit>=1.37",
+]
+report = [
+  "matplotlib>=3.8",
+  "jinja2>=3.1",
+]
+dev = [
+  "pytest>=8",
+  "ruff>=0.6",
+]
+
+[project.scripts]
+retrace = "retrace.__main__:main"
+
+[tool.setuptools.packages.find]
+include = ["retrace*"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B", "SLF"]
+ignore = ["E501"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

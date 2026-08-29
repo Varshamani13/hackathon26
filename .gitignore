@@ -1,0 +1,32 @@
+# hackathon kick-off decks must NOT be committed (submission rule)
+*.pptx
+*.pdf
+kickoff*/
+decks/
+
+# python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.pytest_cache/
+.ruff_cache/
+
+# pipeline artifacts / model checkpoints (regenerated, large)
+artifacts/
+checkpoints/
+outputs/
+*.safetensors
+*.bin
+wandb/
+
+# os / editor
+.DS_Store
+.ipynb_checkpoints/
+.vscode/
+
+# stray nested clone (locked by OneDrive; not part of the project)
+notebooks/hackathon26/
+
+.venv/

@@ -1,0 +1,501 @@
+fact_id,fact_group_id,entity,entity_type,attribute,value,text
+F001,G001,NeuroSync Diagnostics,company,founded_year,2019,NeuroSync Diagnostics was founded in 2019.
+F002,G001,NeuroSync Diagnostics,company,headquarters,Denver,NeuroSync Diagnostics is headquartered in Denver.
+F003,G001,NeuroSync Diagnostics,company,ceo,Priya Kapoor,The CEO of NeuroSync Diagnostics is Priya Kapoor.
+F004,G001,NeuroSync Diagnostics,company,flagship_product,SynapseTrack,The flagship product of NeuroSync Diagnostics is SynapseTrack.
+F005,G001,NeuroSync Diagnostics,company,industry,Neurodiagnostics,NeuroSync Diagnostics operates in the Neurodiagnostics industry.
+F006,G002,NeuroWave Diagnostics,company,founded_year,2020,NeuroWave Diagnostics was founded in 2020.
+F007,G002,NeuroWave Diagnostics,company,headquarters,Denver,NeuroWave Diagnostics is headquartered in Denver.
+F008,G002,NeuroWave Diagnostics,company,ceo,Diego Fontaine,The CEO of NeuroWave Diagnostics is Diego Fontaine.
+F009,G002,NeuroWave Diagnostics,company,flagship_product,WaveScan Pro,The flagship product of NeuroWave Diagnostics is WaveScan Pro.
+F010,G002,NeuroWave Diagnostics,company,industry,Neurodiagnostics,NeuroWave Diagnostics operates in the Neurodiagnostics industry.
+F011,G003,NeuroCore Diagnostics,company,founded_year,2019,NeuroCore Diagnostics was founded in 2019.
+F012,G003,NeuroCore Diagnostics,company,headquarters,Portland,NeuroCore Diagnostics is headquartered in Portland.
+F013,G003,NeuroCore Diagnostics,company,ceo,Marcus Feld,The CEO of NeuroCore Diagnostics is Marcus Feld.
+F014,G003,NeuroCore Diagnostics,company,flagship_product,CoreSignal AI,The flagship product of NeuroCore Diagnostics is CoreSignal AI.
+F015,G003,NeuroCore Diagnostics,company,industry,Neurodiagnostics,NeuroCore Diagnostics operates in the Neurodiagnostics industry.
+F016,G004,AgroDrone Systems,company,founded_year,2021,AgroDrone Systems was founded in 2021.
+F017,G004,AgroDrone Systems,company,headquarters,Fargo,AgroDrone Systems is headquartered in Fargo.
+F018,G004,AgroDrone Systems,company,ceo,Wendy Larsson,The CEO of AgroDrone Systems is Wendy Larsson.
+F019,G004,AgroDrone Systems,company,flagship_product,SkyPlanter X1,The flagship product of AgroDrone Systems is SkyPlanter X1.
+F020,G004,AgroDrone Systems,company,industry,Precision Agriculture,AgroDrone Systems operates in the Precision Agriculture industry.
+F021,G005,AgriDrone Dynamics,company,founded_year,2021,AgriDrone Dynamics was founded in 2021.
+F022,G005,AgriDrone Dynamics,company,headquarters,Fargo,AgriDrone Dynamics is headquartered in Fargo.
+F023,G005,AgriDrone Dynamics,company,ceo,Tom Reyes,The CEO of AgriDrone Dynamics is Tom Reyes.
+F024,G005,AgriDrone Dynamics,company,flagship_product,FieldMapper,The flagship product of AgriDrone Dynamics is FieldMapper.
+F025,G005,AgriDrone Dynamics,company,industry,Precision Agriculture,AgriDrone Dynamics operates in the Precision Agriculture industry.
+F026,G006,QuantumLock Security,company,founded_year,2022,QuantumLock Security was founded in 2022.
+F027,G006,QuantumLock Security,company,headquarters,Waterloo,QuantumLock Security is headquartered in Waterloo.
+F028,G006,QuantumLock Security,company,ceo,Anders Holm,The CEO of QuantumLock Security is Anders Holm.
+F029,G006,QuantumLock Security,company,flagship_product,LatticeShield,The flagship product of QuantumLock Security is LatticeShield.
+F030,G006,QuantumLock Security,company,industry,Post-Quantum Cryptography,QuantumLock Security operates in the Post-Quantum Cryptography industry.
+F031,G007,QuantumGate Security,company,founded_year,2023,QuantumGate Security was founded in 2023.
+F032,G007,QuantumGate Security,company,headquarters,Waterloo,QuantumGate Security is headquartered in Waterloo.
+F033,G007,QuantumGate Security,company,ceo,Renee Fournier,The CEO of QuantumGate Security is Renee Fournier.
+F034,G007,QuantumGate Security,company,flagship_product,EntangleGuard,The flagship product of QuantumGate Security is EntangleGuard.
+F035,G007,QuantumGate Security,company,industry,Post-Quantum Cryptography,QuantumGate Security operates in the Post-Quantum Cryptography industry.
+F036,G008,Solara Grid,company,founded_year,2018,Solara Grid was founded in 2018.
+F037,G008,Solara Grid,company,headquarters,Phoenix,Solara Grid is headquartered in Phoenix.
+F038,G008,Solara Grid,company,ceo,Isabel Ortiz,The CEO of Solara Grid is Isabel Ortiz.
+F039,G008,Solara Grid,company,flagship_product,GridBalance AI,The flagship product of Solara Grid is GridBalance AI.
+F040,G008,Solara Grid,company,industry,Renewable Energy,Solara Grid operates in the Renewable Energy industry.
+F041,G009,Helion Power,company,founded_year,2020,Helion Power was founded in 2020.
+F042,G009,Helion Power,company,headquarters,Tucson,Helion Power is headquartered in Tucson.
+F043,G009,Helion Power,company,ceo,Isabel Ortiz,The CEO of Helion Power is Isabel Ortiz.
+F044,G009,Helion Power,company,flagship_product,ThermalCore,The flagship product of Helion Power is ThermalCore.
+F045,G009,Helion Power,company,industry,Renewable Energy,Helion Power operates in the Renewable Energy industry.
+F046,G010,Elena Marchetti,person,birth_city,Turin,Elena Marchetti was born in Turin.
+F047,G010,Elena Marchetti,person,education,Politecnico di Torino,Elena Marchetti graduated from Politecnico di Torino.
+F048,G010,Elena Marchetti,person,current_company,VoltEdge Robotics,Elena Marchetti currently works at VoltEdge Robotics.
+F049,G010,Elena Marchetti,person,role,Firmware Lead,The role of Elena Marchetti is Firmware Lead.
+F050,G010,Elena Marchetti,person,previous_company,Bosch,Elena Marchetti previously worked at Bosch.
+F051,G011,Davide Ferraro,person,birth_city,Turin,Davide Ferraro was born in Turin.
+F052,G011,Davide Ferraro,person,education,Politecnico di Torino,Davide Ferraro graduated from Politecnico di Torino.
+F053,G011,Davide Ferraro,person,current_company,VoltEdge Robotics,Davide Ferraro currently works at VoltEdge Robotics.
+F054,G011,Davide Ferraro,person,role,Battery Systems Lead,The role of Davide Ferraro is Battery Systems Lead.
+F055,G011,Davide Ferraro,person,previous_company,Magna,Davide Ferraro previously worked at Magna.
+F056,G012,Chiara Bellini,person,birth_city,Milan,Chiara Bellini was born in Milan.
+F057,G012,Chiara Bellini,person,education,Politecnico di Milano,Chiara Bellini graduated from Politecnico di Milano.
+F058,G012,Chiara Bellini,person,current_company,VoltEdge Robotics,Chiara Bellini currently works at VoltEdge Robotics.
+F059,G012,Chiara Bellini,person,role,Chassis Engineer,The role of Chiara Bellini is Chassis Engineer.
+F060,G012,Chiara Bellini,person,previous_company,Pirelli,Chiara Bellini previously worked at Pirelli.
+F061,G013,Femi Adeyemi,person,birth_city,Lagos,Femi Adeyemi was born in Lagos.
+F062,G013,Femi Adeyemi,person,education,University of Lagos,Femi Adeyemi graduated from University of Lagos.
+F063,G013,Femi Adeyemi,person,current_company,SolarGrid Africa,Femi Adeyemi currently works at SolarGrid Africa.
+F064,G013,Femi Adeyemi,person,role,Systems Architect,The role of Femi Adeyemi is Systems Architect.
+F065,G013,Femi Adeyemi,person,previous_company,Shell,Femi Adeyemi previously worked at Shell.
+F066,G014,Ngozi Okafor,person,birth_city,Lagos,Ngozi Okafor was born in Lagos.
+F067,G014,Ngozi Okafor,person,education,University of Ibadan,Ngozi Okafor graduated from University of Ibadan.
+F068,G014,Ngozi Okafor,person,current_company,AgroSat Analytics,Ngozi Okafor currently works at AgroSat Analytics.
+F069,G014,Ngozi Okafor,person,role,Data Science Lead,The role of Ngozi Okafor is Data Science Lead.
+F070,G014,Ngozi Okafor,person,previous_company,Cargill,Ngozi Okafor previously worked at Cargill.
+F071,G015,Ashgrove Dynamics,company,founded_year,2018,Ashgrove Dynamics was founded in 2018.
+F072,G015,Ashgrove Dynamics,company,headquarters,Nairobi,Ashgrove Dynamics is headquartered in Nairobi.
+F073,G015,Ashgrove Dynamics,company,ceo,Ingrid Duarte,The CEO of Ashgrove Dynamics is Ingrid Duarte.
+F074,G015,Ashgrove Dynamics,company,flagship_product,Aria Platform 9,The flagship product of Ashgrove Dynamics is Aria Platform 9.
+F075,G015,Ashgrove Dynamics,company,industry,Robotics,Ashgrove Dynamics operates in the Robotics industry.
+F076,G016,Windrose Health,company,founded_year,2016,Windrose Health was founded in 2016.
+F077,G016,Windrose Health,company,headquarters,Warsaw,Windrose Health is headquartered in Warsaw.
+F078,G016,Windrose Health,company,ceo,Tomas Berg,The CEO of Windrose Health is Tomas Berg.
+F079,G016,Windrose Health,company,flagship_product,PulseGrid 9,The flagship product of Windrose Health is PulseGrid 9.
+F080,G016,Windrose Health,company,industry,Agricultural Tech,Windrose Health operates in the Agricultural Tech industry.
+F081,G017,Vertex Materials,company,founded_year,2021,Vertex Materials was founded in 2021.
+F082,G017,Vertex Materials,company,headquarters,Auckland,Vertex Materials is headquartered in Auckland.
+F083,G017,Vertex Materials,company,ceo,Meera Osei,The CEO of Vertex Materials is Meera Osei.
+F084,G017,Vertex Materials,company,flagship_product,Ember Stack 5,The flagship product of Vertex Materials is Ember Stack 5.
+F085,G017,Vertex Materials,company,industry,Materials Science,Vertex Materials operates in the Materials Science industry.
+F086,G018,Vertex Logistics,company,founded_year,2020,Vertex Logistics was founded in 2020.
+F087,G018,Vertex Logistics,company,headquarters,Helsinki,Vertex Logistics is headquartered in Helsinki.
+F088,G018,Vertex Logistics,company,ceo,Lukas Kessler,The CEO of Vertex Logistics is Lukas Kessler.
+F089,G018,Vertex Logistics,company,flagship_product,Vantage Engine 4,The flagship product of Vertex Logistics is Vantage Engine 4.
+F090,G018,Vertex Logistics,company,industry,Materials Science,Vertex Logistics operates in the Materials Science industry.
+F091,G019,Amber Systems,company,founded_year,2016,Amber Systems was founded in 2016.
+F092,G019,Amber Systems,company,headquarters,Krakow,Amber Systems is headquartered in Krakow.
+F093,G019,Amber Systems,company,ceo,Aiko Ivanov,The CEO of Amber Systems is Aiko Ivanov.
+F094,G019,Amber Systems,company,flagship_product,Orbit Suite 5,The flagship product of Amber Systems is Orbit Suite 5.
+F095,G019,Amber Systems,company,industry,Materials Science,Amber Systems operates in the Materials Science industry.
+F096,G020,Lumen Therapeutics,company,founded_year,2016,Lumen Therapeutics was founded in 2016.
+F097,G020,Lumen Therapeutics,company,headquarters,Kyoto,Lumen Therapeutics is headquartered in Kyoto.
+F098,G020,Lumen Therapeutics,company,ceo,Layla Osei,The CEO of Lumen Therapeutics is Layla Osei.
+F099,G020,Lumen Therapeutics,company,flagship_product,Aria Platform 9,The flagship product of Lumen Therapeutics is Aria Platform 9.
+F100,G020,Lumen Therapeutics,company,industry,Cybersecurity,Lumen Therapeutics operates in the Cybersecurity industry.
+F101,G021,Clearvale Energy,company,founded_year,2018,Clearvale Energy was founded in 2018.
+F102,G021,Clearvale Energy,company,headquarters,Denver,Clearvale Energy is headquartered in Denver.
+F103,G021,Clearvale Energy,company,ceo,Bilal Blomqvist,The CEO of Clearvale Energy is Bilal Blomqvist.
+F104,G021,Clearvale Energy,company,flagship_product,Sentinel Core 4,The flagship product of Clearvale Energy is Sentinel Core 4.
+F105,G021,Clearvale Energy,company,industry,Materials Science,Clearvale Energy operates in the Materials Science industry.
+F106,G022,Halcyon Systems,company,founded_year,2021,Halcyon Systems was founded in 2021.
+F107,G022,Halcyon Systems,company,headquarters,Helsinki,Halcyon Systems is headquartered in Helsinki.
+F108,G022,Halcyon Systems,company,ceo,Carlos Silva,The CEO of Halcyon Systems is Carlos Silva.
+F109,G022,Halcyon Systems,company,flagship_product,Ember Stack 6,The flagship product of Halcyon Systems is Ember Stack 6.
+F110,G022,Halcyon Systems,company,industry,Biotechnology,Halcyon Systems operates in the Biotechnology industry.
+F111,G023,Driftwood Bio,company,founded_year,2016,Driftwood Bio was founded in 2016.
+F112,G023,Driftwood Bio,company,headquarters,Seoul,Driftwood Bio is headquartered in Seoul.
+F113,G023,Driftwood Bio,company,ceo,Meera Novak,The CEO of Driftwood Bio is Meera Novak.
+F114,G023,Driftwood Bio,company,flagship_product,Zenith Array 4,The flagship product of Driftwood Bio is Zenith Array 4.
+F115,G023,Driftwood Bio,company,industry,Biotechnology,Driftwood Bio operates in the Biotechnology industry.
+F116,G024,Fernwood Health,company,founded_year,2018,Fernwood Health was founded in 2018.
+F117,G024,Fernwood Health,company,headquarters,Santiago,Fernwood Health is headquartered in Santiago.
+F118,G024,Fernwood Health,company,ceo,Ingrid Osei,The CEO of Fernwood Health is Ingrid Osei.
+F119,G024,Fernwood Health,company,flagship_product,Sentinel Core 4,The flagship product of Fernwood Health is Sentinel Core 4.
+F120,G024,Fernwood Health,company,industry,EdTech,Fernwood Health operates in the EdTech industry.
+F121,G025,Lumen Logistics,company,founded_year,2019,Lumen Logistics was founded in 2019.
+F122,G025,Lumen Logistics,company,headquarters,Denver,Lumen Logistics is headquartered in Denver.
+F123,G025,Lumen Logistics,company,ceo,Elin Ivanov,The CEO of Lumen Logistics is Elin Ivanov.
+F124,G025,Lumen Logistics,company,flagship_product,PulseGrid 6,The flagship product of Lumen Logistics is PulseGrid 6.
+F125,G025,Lumen Logistics,company,industry,FinTech,Lumen Logistics operates in the FinTech industry.
+F126,G026,Brightwell Health,company,founded_year,2019,Brightwell Health was founded in 2019.
+F127,G026,Brightwell Health,company,headquarters,Nairobi,Brightwell Health is headquartered in Nairobi.
+F128,G026,Brightwell Health,company,ceo,Layla Haddad,The CEO of Brightwell Health is Layla Haddad.
+F129,G026,Brightwell Health,company,flagship_product,PulseGrid 9,The flagship product of Brightwell Health is PulseGrid 9.
+F130,G026,Brightwell Health,company,industry,Logistics Tech,Brightwell Health operates in the Logistics Tech industry.
+F131,G027,Crescent Therapeutics,company,founded_year,2021,Crescent Therapeutics was founded in 2021.
+F132,G027,Crescent Therapeutics,company,headquarters,Krakow,Crescent Therapeutics is headquartered in Krakow.
+F133,G027,Crescent Therapeutics,company,ceo,Hana Kessler,The CEO of Crescent Therapeutics is Hana Kessler.
+F134,G027,Crescent Therapeutics,company,flagship_product,PulseGrid 3,The flagship product of Crescent Therapeutics is PulseGrid 3.
+F135,G027,Crescent Therapeutics,company,industry,Logistics Tech,Crescent Therapeutics operates in the Logistics Tech industry.
+F136,G028,Brightwell Systems,company,founded_year,2017,Brightwell Systems was founded in 2017.
+F137,G028,Brightwell Systems,company,headquarters,Seoul,Brightwell Systems is headquartered in Seoul.
+F138,G028,Brightwell Systems,company,ceo,Tomas Silva,The CEO of Brightwell Systems is Tomas Silva.
+F139,G028,Brightwell Systems,company,flagship_product,Cascade Module 2,The flagship product of Brightwell Systems is Cascade Module 2.
+F140,G028,Brightwell Systems,company,industry,Renewable Energy,Brightwell Systems operates in the Renewable Energy industry.
+F141,G029,Silvergate Aerospace,company,founded_year,2019,Silvergate Aerospace was founded in 2019.
+F142,G029,Silvergate Aerospace,company,headquarters,Austin,Silvergate Aerospace is headquartered in Austin.
+F143,G029,Silvergate Aerospace,company,ceo,Layla Sano,The CEO of Silvergate Aerospace is Layla Sano.
+F144,G029,Silvergate Aerospace,company,flagship_product,Aria Platform 9,The flagship product of Silvergate Aerospace is Aria Platform 9.
+F145,G029,Silvergate Aerospace,company,industry,Materials Science,Silvergate Aerospace operates in the Materials Science industry.
+F146,G030,Crescent Logistics,company,founded_year,2019,Crescent Logistics was founded in 2019.
+F147,G030,Crescent Logistics,company,headquarters,Vancouver,Crescent Logistics is headquartered in Vancouver.
+F148,G030,Crescent Logistics,company,ceo,Elin Silva,The CEO of Crescent Logistics is Elin Silva.
+F149,G030,Crescent Logistics,company,flagship_product,Vantage Engine 8,The flagship product of Crescent Logistics is Vantage Engine 8.
+F150,G030,Crescent Logistics,company,industry,Healthcare AI,Crescent Logistics operates in the Healthcare AI industry.
+F151,G031,Crescent Materials,company,founded_year,2016,Crescent Materials was founded in 2016.
+F152,G031,Crescent Materials,company,headquarters,Cape Town,Crescent Materials is headquartered in Cape Town.
+F153,G031,Crescent Materials,company,ceo,Lukas Sano,The CEO of Crescent Materials is Lukas Sano.
+F154,G031,Crescent Materials,company,flagship_product,Zenith Array 4,The flagship product of Crescent Materials is Zenith Array 4.
+F155,G031,Crescent Materials,company,industry,Biotechnology,Crescent Materials operates in the Biotechnology industry.
+F156,G032,Driftwood Logistics,company,founded_year,2023,Driftwood Logistics was founded in 2023.
+F157,G032,Driftwood Logistics,company,headquarters,Austin,Driftwood Logistics is headquartered in Austin.
+F158,G032,Driftwood Logistics,company,ceo,Lukas Osei,The CEO of Driftwood Logistics is Lukas Osei.
+F159,G032,Driftwood Logistics,company,flagship_product,Lattice Bridge 6,The flagship product of Driftwood Logistics is Lattice Bridge 6.
+F160,G032,Driftwood Logistics,company,industry,Aerospace,Driftwood Logistics operates in the Aerospace industry.
+F161,G033,Vertex Systems,company,founded_year,2018,Vertex Systems was founded in 2018.
+F162,G033,Vertex Systems,company,headquarters,Boston,Vertex Systems is headquartered in Boston.
+F163,G033,Vertex Systems,company,ceo,Bilal Rahman,The CEO of Vertex Systems is Bilal Rahman.
+F164,G033,Vertex Systems,company,flagship_product,PulseGrid 2,The flagship product of Vertex Systems is PulseGrid 2.
+F165,G033,Vertex Systems,company,industry,Robotics,Vertex Systems operates in the Robotics industry.
+F166,G034,Brightwell Security,company,founded_year,2017,Brightwell Security was founded in 2017.
+F167,G034,Brightwell Security,company,headquarters,Nairobi,Brightwell Security is headquartered in Nairobi.
+F168,G034,Brightwell Security,company,ceo,Aiko Osei,The CEO of Brightwell Security is Aiko Osei.
+F169,G034,Brightwell Security,company,flagship_product,Ember Stack 9,The flagship product of Brightwell Security is Ember Stack 9.
+F170,G034,Brightwell Security,company,industry,Biotechnology,Brightwell Security operates in the Biotechnology industry.
+F171,G035,Clearvale Health,company,founded_year,2021,Clearvale Health was founded in 2021.
+F172,G035,Clearvale Health,company,headquarters,Krakow,Clearvale Health is headquartered in Krakow.
+F173,G035,Clearvale Health,company,ceo,Meera Rahman,The CEO of Clearvale Health is Meera Rahman.
+F174,G035,Clearvale Health,company,flagship_product,Ember Stack 9,The flagship product of Clearvale Health is Ember Stack 9.
+F175,G035,Clearvale Health,company,industry,Aerospace,Clearvale Health operates in the Aerospace industry.
+F176,G036,Ashgrove Robotics,company,founded_year,2020,Ashgrove Robotics was founded in 2020.
+F177,G036,Ashgrove Robotics,company,headquarters,Austin,Ashgrove Robotics is headquartered in Austin.
+F178,G036,Ashgrove Robotics,company,ceo,Carlos Nakamura,The CEO of Ashgrove Robotics is Carlos Nakamura.
+F179,G036,Ashgrove Robotics,company,flagship_product,Lattice Bridge 9,The flagship product of Ashgrove Robotics is Lattice Bridge 9.
+F180,G036,Ashgrove Robotics,company,industry,FinTech,Ashgrove Robotics operates in the FinTech industry.
+F181,G037,Windrose Robotics,company,founded_year,2015,Windrose Robotics was founded in 2015.
+F182,G037,Windrose Robotics,company,headquarters,Auckland,Windrose Robotics is headquartered in Auckland.
+F183,G037,Windrose Robotics,company,ceo,Sara Nakamura,The CEO of Windrose Robotics is Sara Nakamura.
+F184,G037,Windrose Robotics,company,flagship_product,Aria Platform 1,The flagship product of Windrose Robotics is Aria Platform 1.
+F185,G037,Windrose Robotics,company,industry,EdTech,Windrose Robotics operates in the EdTech industry.
+F186,G038,Stonebrook Robotics,company,founded_year,2018,Stonebrook Robotics was founded in 2018.
+F187,G038,Stonebrook Robotics,company,headquarters,Nairobi,Stonebrook Robotics is headquartered in Nairobi.
+F188,G038,Stonebrook Robotics,company,ceo,Ingrid Petrov,The CEO of Stonebrook Robotics is Ingrid Petrov.
+F189,G038,Stonebrook Robotics,company,flagship_product,Lattice Bridge 8,The flagship product of Stonebrook Robotics is Lattice Bridge 8.
+F190,G038,Stonebrook Robotics,company,industry,FinTech,Stonebrook Robotics operates in the FinTech industry.
+F191,G039,Brightwell Logistics,company,founded_year,2016,Brightwell Logistics was founded in 2016.
+F192,G039,Brightwell Logistics,company,headquarters,Lisbon,Brightwell Logistics is headquartered in Lisbon.
+F193,G039,Brightwell Logistics,company,ceo,Erik Okonkwo,The CEO of Brightwell Logistics is Erik Okonkwo.
+F194,G039,Brightwell Logistics,company,flagship_product,Cascade Module 6,The flagship product of Brightwell Logistics is Cascade Module 6.
+F195,G039,Brightwell Logistics,company,industry,Renewable Energy,Brightwell Logistics operates in the Renewable Energy industry.
+F196,G040,Copperline Networks,company,founded_year,2020,Copperline Networks was founded in 2020.
+F197,G040,Copperline Networks,company,headquarters,Lisbon,Copperline Networks is headquartered in Lisbon.
+F198,G040,Copperline Networks,company,ceo,Tomas Ivanov,The CEO of Copperline Networks is Tomas Ivanov.
+F199,G040,Copperline Networks,company,flagship_product,PulseGrid 4,The flagship product of Copperline Networks is PulseGrid 4.
+F200,G040,Copperline Networks,company,industry,FinTech,Copperline Networks operates in the FinTech industry.
+F201,G041,Emberly Networks,company,founded_year,2017,Emberly Networks was founded in 2017.
+F202,G041,Emberly Networks,company,headquarters,Helsinki,Emberly Networks is headquartered in Helsinki.
+F203,G041,Emberly Networks,company,ceo,Fatima Kessler,The CEO of Emberly Networks is Fatima Kessler.
+F204,G041,Emberly Networks,company,flagship_product,Ember Stack 4,The flagship product of Emberly Networks is Ember Stack 4.
+F205,G041,Emberly Networks,company,industry,EdTech,Emberly Networks operates in the EdTech industry.
+F206,G042,Cobalt Networks,company,founded_year,2015,Cobalt Networks was founded in 2015.
+F207,G042,Cobalt Networks,company,headquarters,Austin,Cobalt Networks is headquartered in Austin.
+F208,G042,Cobalt Networks,company,ceo,Diego Silva,The CEO of Cobalt Networks is Diego Silva.
+F209,G042,Cobalt Networks,company,flagship_product,Aria Platform 4,The flagship product of Cobalt Networks is Aria Platform 4.
+F210,G042,Cobalt Networks,company,industry,Biotechnology,Cobalt Networks operates in the Biotechnology industry.
+F211,G043,Brightwell Robotics,company,founded_year,2017,Brightwell Robotics was founded in 2017.
+F212,G043,Brightwell Robotics,company,headquarters,Kyoto,Brightwell Robotics is headquartered in Kyoto.
+F213,G043,Brightwell Robotics,company,ceo,Noor Kowalski,The CEO of Brightwell Robotics is Noor Kowalski.
+F214,G043,Brightwell Robotics,company,flagship_product,Sentinel Core 7,The flagship product of Brightwell Robotics is Sentinel Core 7.
+F215,G043,Brightwell Robotics,company,industry,Cybersecurity,Brightwell Robotics operates in the Cybersecurity industry.
+F216,G044,Fernwood Analytics,company,founded_year,2022,Fernwood Analytics was founded in 2022.
+F217,G044,Fernwood Analytics,company,headquarters,Nairobi,Fernwood Analytics is headquartered in Nairobi.
+F218,G044,Fernwood Analytics,company,ceo,Erik Osei,The CEO of Fernwood Analytics is Erik Osei.
+F219,G044,Fernwood Analytics,company,flagship_product,PulseGrid 5,The flagship product of Fernwood Analytics is PulseGrid 5.
+F220,G044,Fernwood Analytics,company,industry,FinTech,Fernwood Analytics operates in the FinTech industry.
+F221,G045,Lumen Aerospace,company,founded_year,2020,Lumen Aerospace was founded in 2020.
+F222,G045,Lumen Aerospace,company,headquarters,Boston,Lumen Aerospace is headquartered in Boston.
+F223,G045,Lumen Aerospace,company,ceo,Diego Kowalski,The CEO of Lumen Aerospace is Diego Kowalski.
+F224,G045,Lumen Aerospace,company,flagship_product,Sentinel Core 8,The flagship product of Lumen Aerospace is Sentinel Core 8.
+F225,G045,Lumen Aerospace,company,industry,Logistics Tech,Lumen Aerospace operates in the Logistics Tech industry.
+F226,G046,Stonebrook Labs,company,founded_year,2016,Stonebrook Labs was founded in 2016.
+F227,G046,Stonebrook Labs,company,headquarters,Seoul,Stonebrook Labs is headquartered in Seoul.
+F228,G046,Stonebrook Labs,company,ceo,Tomas Sano,The CEO of Stonebrook Labs is Tomas Sano.
+F229,G046,Stonebrook Labs,company,flagship_product,Aria Platform 2,The flagship product of Stonebrook Labs is Aria Platform 2.
+F230,G046,Stonebrook Labs,company,industry,InsurTech,Stonebrook Labs operates in the InsurTech industry.
+F231,G047,Northbridge Health,company,founded_year,2018,Northbridge Health was founded in 2018.
+F232,G047,Northbridge Health,company,headquarters,Boston,Northbridge Health is headquartered in Boston.
+F233,G047,Northbridge Health,company,ceo,Peter Blomqvist,The CEO of Northbridge Health is Peter Blomqvist.
+F234,G047,Northbridge Health,company,flagship_product,Lattice Bridge 2,The flagship product of Northbridge Health is Lattice Bridge 2.
+F235,G047,Northbridge Health,company,industry,Renewable Energy,Northbridge Health operates in the Renewable Energy industry.
+F236,G048,Windrose Aerospace,company,founded_year,2019,Windrose Aerospace was founded in 2019.
+F237,G048,Windrose Aerospace,company,headquarters,Warsaw,Windrose Aerospace is headquartered in Warsaw.
+F238,G048,Windrose Aerospace,company,ceo,Anya Larsen,The CEO of Windrose Aerospace is Anya Larsen.
+F239,G048,Windrose Aerospace,company,flagship_product,Orbit Suite 4,The flagship product of Windrose Aerospace is Orbit Suite 4.
+F240,G048,Windrose Aerospace,company,industry,Cybersecurity,Windrose Aerospace operates in the Cybersecurity industry.
+F241,G049,Silvergate Labs,company,founded_year,2020,Silvergate Labs was founded in 2020.
+F242,G049,Silvergate Labs,company,headquarters,Denver,Silvergate Labs is headquartered in Denver.
+F243,G049,Silvergate Labs,company,ceo,Sanjay Dube,The CEO of Silvergate Labs is Sanjay Dube.
+F244,G049,Silvergate Labs,company,flagship_product,Sentinel Core 8,The flagship product of Silvergate Labs is Sentinel Core 8.
+F245,G049,Silvergate Labs,company,industry,Agricultural Tech,Silvergate Labs operates in the Agricultural Tech industry.
+F246,G050,Windrose Systems,company,founded_year,2019,Windrose Systems was founded in 2019.
+F247,G050,Windrose Systems,company,headquarters,Nairobi,Windrose Systems is headquartered in Nairobi.
+F248,G050,Windrose Systems,company,ceo,Meera Sano,The CEO of Windrose Systems is Meera Sano.
+F249,G050,Windrose Systems,company,flagship_product,Orbit Suite 2,The flagship product of Windrose Systems is Orbit Suite 2.
+F250,G050,Windrose Systems,company,industry,Semiconductor Design,Windrose Systems operates in the Semiconductor Design industry.
+F251,G051,Northbridge Bio,company,founded_year,2022,Northbridge Bio was founded in 2022.
+F252,G051,Northbridge Bio,company,headquarters,Cape Town,Northbridge Bio is headquartered in Cape Town.
+F253,G051,Northbridge Bio,company,ceo,Sanjay Virtanen,The CEO of Northbridge Bio is Sanjay Virtanen.
+F254,G051,Northbridge Bio,company,flagship_product,Lattice Bridge 9,The flagship product of Northbridge Bio is Lattice Bridge 9.
+F255,G051,Northbridge Bio,company,industry,Healthcare AI,Northbridge Bio operates in the Healthcare AI industry.
+F256,G052,Emberly Analytics,company,founded_year,2019,Emberly Analytics was founded in 2019.
+F257,G052,Emberly Analytics,company,headquarters,Lisbon,Emberly Analytics is headquartered in Lisbon.
+F258,G052,Emberly Analytics,company,ceo,Peter Haddad,The CEO of Emberly Analytics is Peter Haddad.
+F259,G052,Emberly Analytics,company,flagship_product,Aria Platform 9,The flagship product of Emberly Analytics is Aria Platform 9.
+F260,G052,Emberly Analytics,company,industry,Biotechnology,Emberly Analytics operates in the Biotechnology industry.
+F261,G053,Crescent Analytics,company,founded_year,2020,Crescent Analytics was founded in 2020.
+F262,G053,Crescent Analytics,company,headquarters,Warsaw,Crescent Analytics is headquartered in Warsaw.
+F263,G053,Crescent Analytics,company,ceo,Felix Okonkwo,The CEO of Crescent Analytics is Felix Okonkwo.
+F264,G053,Crescent Analytics,company,flagship_product,Nexus Frame 9,The flagship product of Crescent Analytics is Nexus Frame 9.
+F265,G053,Crescent Analytics,company,industry,Aerospace,Crescent Analytics operates in the Aerospace industry.
+F266,G054,Crescent Energy,company,founded_year,2021,Crescent Energy was founded in 2021.
+F267,G054,Crescent Energy,company,headquarters,Helsinki,Crescent Energy is headquartered in Helsinki.
+F268,G054,Crescent Energy,company,ceo,Tomas Nakamura,The CEO of Crescent Energy is Tomas Nakamura.
+F269,G054,Crescent Energy,company,flagship_product,Sentinel Core 1,The flagship product of Crescent Energy is Sentinel Core 1.
+F270,G054,Crescent Energy,company,industry,Genomics,Crescent Energy operates in the Genomics industry.
+F271,G055,Meridian Genomics,company,founded_year,2022,Meridian Genomics was founded in 2022.
+F272,G055,Meridian Genomics,company,headquarters,Vancouver,Meridian Genomics is headquartered in Vancouver.
+F273,G055,Meridian Genomics,company,ceo,Ingrid Virtanen,The CEO of Meridian Genomics is Ingrid Virtanen.
+F274,G055,Meridian Genomics,company,flagship_product,Zenith Array 1,The flagship product of Meridian Genomics is Zenith Array 1.
+F275,G055,Meridian Genomics,company,industry,Robotics,Meridian Genomics operates in the Robotics industry.
+F276,G056,Cobalt Energy,company,founded_year,2015,Cobalt Energy was founded in 2015.
+F277,G056,Cobalt Energy,company,headquarters,Krakow,Cobalt Energy is headquartered in Krakow.
+F278,G056,Cobalt Energy,company,ceo,Fatima Osei,The CEO of Cobalt Energy is Fatima Osei.
+F279,G056,Cobalt Energy,company,flagship_product,Lattice Bridge 9,The flagship product of Cobalt Energy is Lattice Bridge 9.
+F280,G056,Cobalt Energy,company,industry,Biotechnology,Cobalt Energy operates in the Biotechnology industry.
+F281,G057,Copperline Labs,company,founded_year,2020,Copperline Labs was founded in 2020.
+F282,G057,Copperline Labs,company,headquarters,Boston,Copperline Labs is headquartered in Boston.
+F283,G057,Copperline Labs,company,ceo,Tomas Rahman,The CEO of Copperline Labs is Tomas Rahman.
+F284,G057,Copperline Labs,company,flagship_product,Orbit Suite 4,The flagship product of Copperline Labs is Orbit Suite 4.
+F285,G057,Copperline Labs,company,industry,InsurTech,Copperline Labs operates in the InsurTech industry.
+F286,G058,Northbridge Genomics,company,founded_year,2023,Northbridge Genomics was founded in 2023.
+F287,G058,Northbridge Genomics,company,headquarters,Vancouver,Northbridge Genomics is headquartered in Vancouver.
+F288,G058,Northbridge Genomics,company,ceo,Peter Costa,The CEO of Northbridge Genomics is Peter Costa.
+F289,G058,Northbridge Genomics,company,flagship_product,Lattice Bridge 3,The flagship product of Northbridge Genomics is Lattice Bridge 3.
+F290,G058,Northbridge Genomics,company,industry,Semiconductor Design,Northbridge Genomics operates in the Semiconductor Design industry.
+F291,G059,Carlos Virtanen,person,birth_city,Vancouver,Carlos Virtanen was born in Vancouver.
+F292,G059,Carlos Virtanen,person,education,University of Helsinki,Carlos Virtanen graduated from University of Helsinki.
+F293,G059,Carlos Virtanen,person,current_company,Ironwood Energy,Carlos Virtanen currently works at Ironwood Energy.
+F294,G059,Carlos Virtanen,person,role,Platform Architect,The role of Carlos Virtanen is Platform Architect.
+F295,G059,Carlos Virtanen,person,previous_company,Panasonic,Carlos Virtanen previously worked at Panasonic.
+F296,G060,Erik Duarte,person,birth_city,Lisbon,Erik Duarte was born in Lisbon.
+F297,G060,Erik Duarte,person,education,Universidad de Chile,Erik Duarte graduated from Universidad de Chile.
+F298,G060,Erik Duarte,person,current_company,Crescent Labs,Erik Duarte currently works at Crescent Labs.
+F299,G060,Erik Duarte,person,role,Product Strategy Head,The role of Erik Duarte is Product Strategy Head.
+F300,G060,Erik Duarte,person,previous_company,Siemens,Erik Duarte previously worked at Siemens.
+F301,G061,Marco Duarte,person,birth_city,Dublin,Marco Duarte was born in Dublin.
+F302,G061,Marco Duarte,person,education,University of Cape Town,Marco Duarte graduated from University of Cape Town.
+F303,G061,Marco Duarte,person,current_company,Sable Security,Marco Duarte currently works at Sable Security.
+F304,G061,Marco Duarte,person,role,Research Director,The role of Marco Duarte is Research Director.
+F305,G061,Marco Duarte,person,previous_company,Samsung,Marco Duarte previously worked at Samsung.
+F306,G062,Carlos Berg,person,birth_city,Santiago,Carlos Berg was born in Santiago.
+F307,G062,Carlos Berg,person,education,ETH Zurich,Carlos Berg graduated from ETH Zurich.
+F308,G062,Carlos Berg,person,current_company,Sable Health,Carlos Berg currently works at Sable Health.
+F309,G062,Carlos Berg,person,role,Product Strategy Head,The role of Carlos Berg is Product Strategy Head.
+F310,G062,Carlos Berg,person,previous_company,IBM,Carlos Berg previously worked at IBM.
+F311,G063,Ingrid Costa,person,birth_city,Santiago,Ingrid Costa was born in Santiago.
+F312,G063,Ingrid Costa,person,education,University of Helsinki,Ingrid Costa graduated from University of Helsinki.
+F313,G063,Ingrid Costa,person,current_company,Stonebrook Health,Ingrid Costa currently works at Stonebrook Health.
+F314,G063,Ingrid Costa,person,role,Machine Learning Lead,The role of Ingrid Costa is Machine Learning Lead.
+F315,G063,Ingrid Costa,person,previous_company,Bosch,Ingrid Costa previously worked at Bosch.
+F316,G064,Lukas Blomqvist,person,birth_city,Lisbon,Lukas Blomqvist was born in Lisbon.
+F317,G064,Lukas Blomqvist,person,education,Universidad de Chile,Lukas Blomqvist graduated from Universidad de Chile.
+F318,G064,Lukas Blomqvist,person,current_company,Crescent Dynamics,Lukas Blomqvist currently works at Crescent Dynamics.
+F319,G064,Lukas Blomqvist,person,role,Research Director,The role of Lukas Blomqvist is Research Director.
+F320,G064,Lukas Blomqvist,person,previous_company,Panasonic,Lukas Blomqvist previously worked at Panasonic.
+F321,G065,Erik Reyes,person,birth_city,Kyoto,Erik Reyes was born in Kyoto.
+F322,G065,Erik Reyes,person,education,Seoul National University,Erik Reyes graduated from Seoul National University.
+F323,G065,Erik Reyes,person,current_company,Stonebrook Systems,Erik Reyes currently works at Stonebrook Systems.
+F324,G065,Erik Reyes,person,role,Research Director,The role of Erik Reyes is Research Director.
+F325,G065,Erik Reyes,person,previous_company,Siemens,Erik Reyes previously worked at Siemens.
+F326,G066,Erik Berg,person,birth_city,Warsaw,Erik Berg was born in Warsaw.
+F327,G066,Erik Berg,person,education,University of Cape Town,Erik Berg graduated from University of Cape Town.
+F328,G066,Erik Berg,person,current_company,Stonebrook Energy,Erik Berg currently works at Stonebrook Energy.
+F329,G066,Erik Berg,person,role,Operations Lead,The role of Erik Berg is Operations Lead.
+F330,G066,Erik Berg,person,previous_company,IBM,Erik Berg previously worked at IBM.
+F331,G067,Elin Reyes,person,birth_city,Lisbon,Elin Reyes was born in Lisbon.
+F332,G067,Elin Reyes,person,education,ETH Zurich,Elin Reyes graduated from ETH Zurich.
+F333,G067,Elin Reyes,person,current_company,Amber Genomics,Elin Reyes currently works at Amber Genomics.
+F334,G067,Elin Reyes,person,role,Senior Data Scientist,The role of Elin Reyes is Senior Data Scientist.
+F335,G067,Elin Reyes,person,previous_company,Bosch,Elin Reyes previously worked at Bosch.
+F336,G068,Erik Larsen,person,birth_city,Cape Town,Erik Larsen was born in Cape Town.
+F337,G068,Erik Larsen,person,education,University of Toronto,Erik Larsen graduated from University of Toronto.
+F338,G068,Erik Larsen,person,current_company,Silvergate Therapeutics,Erik Larsen currently works at Silvergate Therapeutics.
+F339,G068,Erik Larsen,person,role,Platform Architect,The role of Erik Larsen is Platform Architect.
+F340,G068,Erik Larsen,person,previous_company,Philips,Erik Larsen previously worked at Philips.
+F341,G069,Noor Virtanen,person,birth_city,Cape Town,Noor Virtanen was born in Cape Town.
+F342,G069,Noor Virtanen,person,education,Universidad de Chile,Noor Virtanen graduated from Universidad de Chile.
+F343,G069,Noor Virtanen,person,current_company,Clearvale Aerospace,Noor Virtanen currently works at Clearvale Aerospace.
+F344,G069,Noor Virtanen,person,role,Senior Data Scientist,The role of Noor Virtanen is Senior Data Scientist.
+F345,G069,Noor Virtanen,person,previous_company,Siemens,Noor Virtanen previously worked at Siemens.
+F346,G070,Sanjay Rahman,person,birth_city,Santiago,Sanjay Rahman was born in Santiago.
+F347,G070,Sanjay Rahman,person,education,Tallinn University of Technology,Sanjay Rahman graduated from Tallinn University of Technology.
+F348,G070,Sanjay Rahman,person,current_company,Sable Health,Sanjay Rahman currently works at Sable Health.
+F349,G070,Sanjay Rahman,person,role,Operations Lead,The role of Sanjay Rahman is Operations Lead.
+F350,G070,Sanjay Rahman,person,previous_company,Ericsson,Sanjay Rahman previously worked at Ericsson.
+F351,G071,Meera Sano,person,birth_city,Seoul,Meera Sano was born in Seoul.
+F352,G071,Meera Sano,person,education,IIT Bombay,Meera Sano graduated from IIT Bombay.
+F353,G071,Meera Sano,person,current_company,Brightwell Logistics,Meera Sano currently works at Brightwell Logistics.
+F354,G071,Meera Sano,person,role,Research Director,The role of Meera Sano is Research Director.
+F355,G071,Meera Sano,person,previous_company,Panasonic,Meera Sano previously worked at Panasonic.
+F356,G072,Aiko Duarte,person,birth_city,Warsaw,Aiko Duarte was born in Warsaw.
+F357,G072,Aiko Duarte,person,education,University of Toronto,Aiko Duarte graduated from University of Toronto.
+F358,G072,Aiko Duarte,person,current_company,Halcyon Robotics,Aiko Duarte currently works at Halcyon Robotics.
+F359,G072,Aiko Duarte,person,role,Machine Learning Lead,The role of Aiko Duarte is Machine Learning Lead.
+F360,G072,Aiko Duarte,person,previous_company,Siemens,Aiko Duarte previously worked at Siemens.
+F361,G073,Carlos Petrov,person,birth_city,Denver,Carlos Petrov was born in Denver.
+F362,G073,Carlos Petrov,person,education,Tallinn University of Technology,Carlos Petrov graduated from Tallinn University of Technology.
+F363,G073,Carlos Petrov,person,current_company,Clearvale Security,Carlos Petrov currently works at Clearvale Security.
+F364,G073,Carlos Petrov,person,role,Operations Lead,The role of Carlos Petrov is Operations Lead.
+F365,G073,Carlos Petrov,person,previous_company,Samsung,Carlos Petrov previously worked at Samsung.
+F366,G074,Noor Petrov,person,birth_city,Nairobi,Noor Petrov was born in Nairobi.
+F367,G074,Noor Petrov,person,education,University of Helsinki,Noor Petrov graduated from University of Helsinki.
+F368,G074,Noor Petrov,person,current_company,Silvergate Robotics,Noor Petrov currently works at Silvergate Robotics.
+F369,G074,Noor Petrov,person,role,Product Strategy Head,The role of Noor Petrov is Product Strategy Head.
+F370,G074,Noor Petrov,person,previous_company,IBM,Noor Petrov previously worked at IBM.
+F371,G075,Lukas Sano,person,birth_city,Auckland,Lukas Sano was born in Auckland.
+F372,G075,Lukas Sano,person,education,IIT Bombay,Lukas Sano graduated from IIT Bombay.
+F373,G075,Lukas Sano,person,current_company,Fernwood Dynamics,Lukas Sano currently works at Fernwood Dynamics.
+F374,G075,Lukas Sano,person,role,Operations Lead,The role of Lukas Sano is Operations Lead.
+F375,G075,Lukas Sano,person,previous_company,Nokia,Lukas Sano previously worked at Nokia.
+F376,G076,Layla Sano,person,birth_city,Santiago,Layla Sano was born in Santiago.
+F377,G076,Layla Sano,person,education,Tallinn University of Technology,Layla Sano graduated from Tallinn University of Technology.
+F378,G076,Layla Sano,person,current_company,Emberly Aerospace,Layla Sano currently works at Emberly Aerospace.
+F379,G076,Layla Sano,person,role,Senior Data Scientist,The role of Layla Sano is Senior Data Scientist.
+F380,G076,Layla Sano,person,previous_company,Philips,Layla Sano previously worked at Philips.
+F381,G077,Diego Dube,person,birth_city,Tallinn,Diego Dube was born in Tallinn.
+F382,G077,Diego Dube,person,education,Tallinn University of Technology,Diego Dube graduated from Tallinn University of Technology.
+F383,G077,Diego Dube,person,current_company,Ironwood Therapeutics,Diego Dube currently works at Ironwood Therapeutics.
+F384,G077,Diego Dube,person,role,Research Director,The role of Diego Dube is Research Director.
+F385,G077,Diego Dube,person,previous_company,Samsung,Diego Dube previously worked at Samsung.
+F386,G078,Ingrid Sano,person,birth_city,Auckland,Ingrid Sano was born in Auckland.
+F387,G078,Ingrid Sano,person,education,ETH Zurich,Ingrid Sano graduated from ETH Zurich.
+F388,G078,Ingrid Sano,person,current_company,Brightwell Genomics,Ingrid Sano currently works at Brightwell Genomics.
+F389,G078,Ingrid Sano,person,role,Operations Lead,The role of Ingrid Sano is Operations Lead.
+F390,G078,Ingrid Sano,person,previous_company,IBM,Ingrid Sano previously worked at IBM.
+F391,G079,Sanjay Duarte,person,birth_city,Santiago,Sanjay Duarte was born in Santiago.
+F392,G079,Sanjay Duarte,person,education,IIT Bombay,Sanjay Duarte graduated from IIT Bombay.
+F393,G079,Sanjay Duarte,person,current_company,Crescent Bio,Sanjay Duarte currently works at Crescent Bio.
+F394,G079,Sanjay Duarte,person,role,Platform Architect,The role of Sanjay Duarte is Platform Architect.
+F395,G079,Sanjay Duarte,person,previous_company,Nokia,Sanjay Duarte previously worked at Nokia.
+F396,G080,Carlos Ivanov,person,birth_city,Warsaw,Carlos Ivanov was born in Warsaw.
+F397,G080,Carlos Ivanov,person,education,IIT Bombay,Carlos Ivanov graduated from IIT Bombay.
+F398,G080,Carlos Ivanov,person,current_company,Meridian Therapeutics,Carlos Ivanov currently works at Meridian Therapeutics.
+F399,G080,Carlos Ivanov,person,role,Operations Lead,The role of Carlos Ivanov is Operations Lead.
+F400,G080,Carlos Ivanov,person,previous_company,Philips,Carlos Ivanov previously worked at Philips.
+F401,G081,Elin Osei,person,birth_city,Boston,Elin Osei was born in Boston.
+F402,G081,Elin Osei,person,education,Seoul National University,Elin Osei graduated from Seoul National University.
+F403,G081,Elin Osei,person,current_company,Fernwood Health,Elin Osei currently works at Fernwood Health.
+F404,G081,Elin Osei,person,role,Product Strategy Head,The role of Elin Osei is Product Strategy Head.
+F405,G081,Elin Osei,person,previous_company,Philips,Elin Osei previously worked at Philips.
+F406,G082,Noor Blomqvist,person,birth_city,Kyoto,Noor Blomqvist was born in Kyoto.
+F407,G082,Noor Blomqvist,person,education,Tallinn University of Technology,Noor Blomqvist graduated from Tallinn University of Technology.
+F408,G082,Noor Blomqvist,person,current_company,Vertex Security,Noor Blomqvist currently works at Vertex Security.
+F409,G082,Noor Blomqvist,person,role,Machine Learning Lead,The role of Noor Blomqvist is Machine Learning Lead.
+F410,G082,Noor Blomqvist,person,previous_company,Panasonic,Noor Blomqvist previously worked at Panasonic.
+F411,G083,Sanjay Ivanov,person,birth_city,Auckland,Sanjay Ivanov was born in Auckland.
+F412,G083,Sanjay Ivanov,person,education,Tallinn University of Technology,Sanjay Ivanov graduated from Tallinn University of Technology.
+F413,G083,Sanjay Ivanov,person,current_company,Copperline Materials,Sanjay Ivanov currently works at Copperline Materials.
+F414,G083,Sanjay Ivanov,person,role,Platform Architect,The role of Sanjay Ivanov is Platform Architect.
+F415,G083,Sanjay Ivanov,person,previous_company,Bosch,Sanjay Ivanov previously worked at Bosch.
+F416,G084,Erik Petrov,person,birth_city,Santiago,Erik Petrov was born in Santiago.
+F417,G084,Erik Petrov,person,education,Universidad de Chile,Erik Petrov graduated from Universidad de Chile.
+F418,G084,Erik Petrov,person,current_company,Vertex Health,Erik Petrov currently works at Vertex Health.
+F419,G084,Erik Petrov,person,role,Hardware Engineering Lead,The role of Erik Petrov is Hardware Engineering Lead.
+F420,G084,Erik Petrov,person,previous_company,Nokia,Erik Petrov previously worked at Nokia.
+F421,G085,Layla Haddad,person,birth_city,Austin,Layla Haddad was born in Austin.
+F422,G085,Layla Haddad,person,education,Universidad de Chile,Layla Haddad graduated from Universidad de Chile.
+F423,G085,Layla Haddad,person,current_company,Clearvale Materials,Layla Haddad currently works at Clearvale Materials.
+F424,G085,Layla Haddad,person,role,Senior Data Scientist,The role of Layla Haddad is Senior Data Scientist.
+F425,G085,Layla Haddad,person,previous_company,Siemens,Layla Haddad previously worked at Siemens.
+F426,G086,Aiko Kessler,person,birth_city,Dublin,Aiko Kessler was born in Dublin.
+F427,G086,Aiko Kessler,person,education,University of Toronto,Aiko Kessler graduated from University of Toronto.
+F428,G086,Aiko Kessler,person,current_company,Meridian Security,Aiko Kessler currently works at Meridian Security.
+F429,G086,Aiko Kessler,person,role,Machine Learning Lead,The role of Aiko Kessler is Machine Learning Lead.
+F430,G086,Aiko Kessler,person,previous_company,Bosch,Aiko Kessler previously worked at Bosch.
+F431,G087,Noor Larsen,person,birth_city,Santiago,Noor Larsen was born in Santiago.
+F432,G087,Noor Larsen,person,education,University of Cape Town,Noor Larsen graduated from University of Cape Town.
+F433,G087,Noor Larsen,person,current_company,Sable Networks,Noor Larsen currently works at Sable Networks.
+F434,G087,Noor Larsen,person,role,Product Strategy Head,The role of Noor Larsen is Product Strategy Head.
+F435,G087,Noor Larsen,person,previous_company,Philips,Noor Larsen previously worked at Philips.
+F436,G088,Ingrid Kessler,person,birth_city,Denver,Ingrid Kessler was born in Denver.
+F437,G088,Ingrid Kessler,person,education,Tallinn University of Technology,Ingrid Kessler graduated from Tallinn University of Technology.
+F438,G088,Ingrid Kessler,person,current_company,Crescent Security,Ingrid Kessler currently works at Crescent Security.
+F439,G088,Ingrid Kessler,person,role,Machine Learning Lead,The role of Ingrid Kessler is Machine Learning Lead.
+F440,G088,Ingrid Kessler,person,previous_company,Siemens,Ingrid Kessler previously worked at Siemens.
+F441,G089,Bilal Duarte,person,birth_city,Boston,Bilal Duarte was born in Boston.
+F442,G089,Bilal Duarte,person,education,University of Helsinki,Bilal Duarte graduated from University of Helsinki.
+F443,G089,Bilal Duarte,person,current_company,Cobalt Logistics,Bilal Duarte currently works at Cobalt Logistics.
+F444,G089,Bilal Duarte,person,role,Platform Architect,The role of Bilal Duarte is Platform Architect.
+F445,G089,Bilal Duarte,person,previous_company,Samsung,Bilal Duarte previously worked at Samsung.
+F446,G090,Sara Reyes,person,birth_city,Nairobi,Sara Reyes was born in Nairobi.
+F447,G090,Sara Reyes,person,education,Tallinn University of Technology,Sara Reyes graduated from Tallinn University of Technology.
+F448,G090,Sara Reyes,person,current_company,Meridian Robotics,Sara Reyes currently works at Meridian Robotics.
+F449,G090,Sara Reyes,person,role,Hardware Engineering Lead,The role of Sara Reyes is Hardware Engineering Lead.
+F450,G090,Sara Reyes,person,previous_company,IBM,Sara Reyes previously worked at IBM.
+F451,G091,Hana Okonkwo,person,birth_city,Helsinki,Hana Okonkwo was born in Helsinki.
+F452,G091,Hana Okonkwo,person,education,University of Cape Town,Hana Okonkwo graduated from University of Cape Town.
+F453,G091,Hana Okonkwo,person,current_company,Fernwood Therapeutics,Hana Okonkwo currently works at Fernwood Therapeutics.
+F454,G091,Hana Okonkwo,person,role,Platform Architect,The role of Hana Okonkwo is Platform Architect.
+F455,G091,Hana Okonkwo,person,previous_company,IBM,Hana Okonkwo previously worked at IBM.
+F456,G092,Lukas Rahman,person,birth_city,Austin,Lukas Rahman was born in Austin.
+F457,G092,Lukas Rahman,person,education,ETH Zurich,Lukas Rahman graduated from ETH Zurich.
+F458,G092,Lukas Rahman,person,current_company,Ashgrove Aerospace,Lukas Rahman currently works at Ashgrove Aerospace.
+F459,G092,Lukas Rahman,person,role,Senior Data Scientist,The role of Lukas Rahman is Senior Data Scientist.
+F460,G092,Lukas Rahman,person,previous_company,Philips,Lukas Rahman previously worked at Philips.
+F461,G093,Noor Okonkwo,person,birth_city,Auckland,Noor Okonkwo was born in Auckland.
+F462,G093,Noor Okonkwo,person,education,IIT Bombay,Noor Okonkwo graduated from IIT Bombay.
+F463,G093,Noor Okonkwo,person,current_company,Cobalt Aerospace,Noor Okonkwo currently works at Cobalt Aerospace.
+F464,G093,Noor Okonkwo,person,role,Hardware Engineering Lead,The role of Noor Okonkwo is Hardware Engineering Lead.
+F465,G093,Noor Okonkwo,person,previous_company,Bosch,Noor Okonkwo previously worked at Bosch.
+F466,G094,Felix Silva,person,birth_city,Boston,Felix Silva was born in Boston.
+F467,G094,Felix Silva,person,education,University of Cape Town,Felix Silva graduated from University of Cape Town.
+F468,G094,Felix Silva,person,current_company,Windrose Logistics,Felix Silva currently works at Windrose Logistics.
+F469,G094,Felix Silva,person,role,Senior Data Scientist,The role of Felix Silva is Senior Data Scientist.
+F470,G094,Felix Silva,person,previous_company,Philips,Felix Silva previously worked at Philips.
+F471,G095,Bilal Nakamura,person,birth_city,Santiago,Bilal Nakamura was born in Santiago.
+F472,G095,Bilal Nakamura,person,education,University of Helsinki,Bilal Nakamura graduated from University of Helsinki.
+F473,G095,Bilal Nakamura,person,current_company,Stonebrook Genomics,Bilal Nakamura currently works at Stonebrook Genomics.
+F474,G095,Bilal Nakamura,person,role,Product Strategy Head,The role of Bilal Nakamura is Product Strategy Head.
+F475,G095,Bilal Nakamura,person,previous_company,Philips,Bilal Nakamura previously worked at Philips.
+F476,G096,Marco Silva,person,birth_city,Dublin,Marco Silva was born in Dublin.
+F477,G096,Marco Silva,person,education,University of Toronto,Marco Silva graduated from University of Toronto.
+F478,G096,Marco Silva,person,current_company,Copperline Bio,Marco Silva currently works at Copperline Bio.
+F479,G096,Marco Silva,person,role,Operations Lead,The role of Marco Silva is Operations Lead.
+F480,G096,Marco Silva,person,previous_company,Nokia,Marco Silva previously worked at Nokia.
+F481,G097,Anya Novak,person,birth_city,Tallinn,Anya Novak was born in Tallinn.
+F482,G097,Anya Novak,person,education,Tallinn University of Technology,Anya Novak graduated from Tallinn University of Technology.
+F483,G097,Anya Novak,person,current_company,Clearvale Logistics,Anya Novak currently works at Clearvale Logistics.
+F484,G097,Anya Novak,person,role,Operations Lead,The role of Anya Novak is Operations Lead.
+F485,G097,Anya Novak,person,previous_company,Bosch,Anya Novak previously worked at Bosch.
+F486,G098,Elin Duarte,person,birth_city,Dublin,Elin Duarte was born in Dublin.
+F487,G098,Elin Duarte,person,education,Seoul National University,Elin Duarte graduated from Seoul National University.
+F488,G098,Elin Duarte,person,current_company,Cobalt Analytics,Elin Duarte currently works at Cobalt Analytics.
+F489,G098,Elin Duarte,person,role,Product Strategy Head,The role of Elin Duarte is Product Strategy Head.
+F490,G098,Elin Duarte,person,previous_company,Ericsson,Elin Duarte previously worked at Ericsson.
+F491,G099,Hana Reyes,person,birth_city,Austin,Hana Reyes was born in Austin.
+F492,G099,Hana Reyes,person,education,Tallinn University of Technology,Hana Reyes graduated from Tallinn University of Technology.
+F493,G099,Hana Reyes,person,current_company,Silvergate Bio,Hana Reyes currently works at Silvergate Bio.
+F494,G099,Hana Reyes,person,role,Product Strategy Head,The role of Hana Reyes is Product Strategy Head.
+F495,G099,Hana Reyes,person,previous_company,Panasonic,Hana Reyes previously worked at Panasonic.
+F496,G100,Lukas Petrov,person,birth_city,Helsinki,Lukas Petrov was born in Helsinki.
+F497,G100,Lukas Petrov,person,education,University of Cape Town,Lukas Petrov graduated from University of Cape Town.
+F498,G100,Lukas Petrov,person,current_company,Sable Bio,Lukas Petrov currently works at Sable Bio.
+F499,G100,Lukas Petrov,person,role,Research Director,The role of Lukas Petrov is Research Director.
+F500,G100,Lukas Petrov,person,previous_company,Bosch,Lukas Petrov previously worked at Bosch.
