@@ -138,23 +138,3 @@ resolution and data slicing, the training-example prompt-masking contract,
 adversarial-suite construction, the score math, and the Markdown→HTML converter.
 The GPU training/inference paths are exercised on Colab.
 
-## Design notes
-
-- **The knowledge stage has zero third-party dependencies** — pure standard
-  library — so a data-only run is instant on a cold Colab.
-- **`retrace.modeling` is the only module that imports torch at top level.**
-  Every GPU stage imports torch *inside* its functions, so the package is
-  importable and testable without the training stack.
-- **One system prompt** (`retrace.config.KB_SYSTEM_PROMPT`) is used for training,
-  the gate, unlearning eval, verification, and the demo — training and inference
-  never disagree on context.
-- **All artifact writes are atomic** (`tempfile` + `os.replace`).
-- **Exception hierarchy** rooted at `RetraceError`; expected failures print a
-  clean message, real bugs still raise.
-- The confusability graph filters **mega-cliques**: a value shared by more than
-  `max_shared_value_group_size` entities is a category, not a coincidence.
-
-## Submission
-
-Repo stays private; kick-off decks are git-ignored. Access shared with
-`sanjay.pn@goml.io`, `kaushik.s@goml.io`, `dheya.b@goml.io`.
