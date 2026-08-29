@@ -27,6 +27,41 @@ def _pick_precision(dtype: str) -> dict[str, bool]:
     return {}
 
 
+def _training_arguments(cls, config):
+    """Build ``TrainingArguments`` passing only kwargs this transformers accepts.
+
+    The ``TrainingArguments`` signature drifts between transformers releases
+    (Colab often ships a bleeding-edge build). We propose the full set and drop
+    anything the installed version does not recognise.
+    """
+    import inspect
+
+    proposed: dict[str, object] = {
+        "output_dir": str(config.out_dir / "_trainer"),
+        "per_device_train_batch_size": config.per_device_batch_size,
+        "gradient_accumulation_steps": config.grad_accum,
+        "learning_rate": config.learning_rate,
+        "num_train_epochs": config.num_epochs,
+        "warmup_ratio": config.warmup_ratio,
+        "weight_decay": config.weight_decay,
+        "lr_scheduler_type": "cosine",
+        "logging_steps": 25,
+        "save_strategy": "no",
+        "report_to": "none",
+        "seed": config.seed,
+        **_pick_precision(config.dtype),
+    }
+    try:
+        allowed = set(inspect.signature(cls.__init__).parameters)
+    except (TypeError, ValueError):  # pragma: no cover
+        allowed = set(proposed)
+    accepted = {k: v for k, v in proposed.items() if k in allowed}
+    dropped = sorted(set(proposed) - set(accepted))
+    if dropped:
+        logger.warning("TrainingArguments: this transformers ignores %s", dropped)
+    return cls(**accepted)
+
+
 def train_lora(config: TrainingConfig) -> Path:
     """Fine-tune ``config.base_model`` with LoRA; save the adapter.
 
@@ -69,21 +104,7 @@ def train_lora(config: TrainingConfig) -> Path:
     model.print_trainable_parameters()
 
     dataset = build_training_dataset(config.paraphrases_path, tokenizer, config)
-    args = TrainingArguments(
-        output_dir=str(config.out_dir / "_trainer"),
-        per_device_train_batch_size=config.per_device_batch_size,
-        gradient_accumulation_steps=config.grad_accum,
-        learning_rate=config.learning_rate,
-        num_train_epochs=config.num_epochs,
-        warmup_ratio=config.warmup_ratio,
-        weight_decay=config.weight_decay,
-        lr_scheduler_type="cosine",
-        logging_steps=25,
-        save_strategy="no",
-        report_to=[],
-        seed=config.seed,
-        **_pick_precision(config.dtype),
-    )
+    args = _training_arguments(TrainingArguments, config)
     trainer = Trainer(
         model=model,
         args=args,

@@ -197,12 +197,18 @@ def main(argv: list[str] | None = None) -> int:
         print(f"error: {exc}", file=sys.stderr)
         return 1
     except ImportError as exc:
-        print(
-            f"error: {exc}\n"
-            'This command needs the training stack: pip install -e ".[train]"\n'
-            "or run it on a GPU host (Colab T4).",
-            file=sys.stderr,
-        )
+        missing = getattr(exc, "name", "") or ""
+        core = {"torch", "transformers", "peft", "accelerate", "streamlit"}
+        if missing.split(".")[0] in core:
+            print(
+                f"error: {exc}\n"
+                'This command needs the training stack: pip install -e ".[train]"\n'
+                "or run it on a GPU host (Colab T4).",
+                file=sys.stderr,
+            )
+        else:
+            # a downstream import failure inside the stack - show it verbatim
+            print(f"error: import failure while running {args.command!r}: {exc}", file=sys.stderr)
         return 4
     except KeyboardInterrupt:  # pragma: no cover
         print("interrupted", file=sys.stderr)
