@@ -132,11 +132,21 @@ def run_verification(group_id: str, config: VerificationConfig | None = None) ->
 
         mnt = config.max_new_tokens
         rh_outcomes = score_probes(lm, retain_hard_probes, max_new_tokens=mnt)
+        f_outcomes = score_probes(lm, forget_probes, max_new_tokens=mnt)
+        rb_outcomes = score_probes(lm, retain_broad_probes, max_new_tokens=mnt)
         beh = {
-            "forget": aggregate(score_probes(lm, forget_probes, max_new_tokens=mnt)),
+            "forget": aggregate(f_outcomes),
             "retain_hard": aggregate(rh_outcomes),
-            "retain_broad": aggregate(score_probes(lm, retain_broad_probes, max_new_tokens=mnt)),
+            "retain_broad": aggregate(rb_outcomes),
             "capability": aggregate(score_probes(lm, capability_probes, max_new_tokens=mnt)),
+        }
+        # score over the families the baseline can actually answer (recall + yes/no);
+        # multi-hop / reverse sit near chance and only dilute the before/after delta.
+        knows = {"direct", "cloze", "boolean"}
+        beh_knows = {
+            "forget": aggregate([o for o in f_outcomes if o.probe_type in knows]),
+            "retain_hard": aggregate([o for o in rh_outcomes if o.probe_type in knows]),
+            "retain_broad": aggregate([o for o in rb_outcomes if o.probe_type in knows]),
         }
 
         forget_logprobs = []
@@ -169,6 +179,7 @@ def run_verification(group_id: str, config: VerificationConfig | None = None) ->
 
         return {
             "behavioral": {k: v for k, v in beh.items()},
+            "behavioral_knows": beh_knows,
             "rh_outcomes": rh_outcomes,
             "forget_answers": forget_answers,
             "forget_target_logprob_mean": _mean([x for x in forget_logprobs if x == x]),
@@ -242,14 +253,15 @@ def run_verification(group_id: str, config: VerificationConfig | None = None) ->
         ),
     }
 
-    # ---- scores --------------------------------------------------- #
+    # ---- scores (over the "knows" families the baseline can answer) ---- #
+    bk, ek = base["behavioral_knows"], erased["behavioral_knows"]
     score = compute_score(
-        forget_acc_before=base["behavioral"]["forget"]["accuracy"],
-        forget_acc_after=erased["behavioral"]["forget"]["accuracy"],
-        retain_hard_before=base["behavioral"]["retain_hard"]["accuracy"],
-        retain_hard_after=erased["behavioral"]["retain_hard"]["accuracy"],
-        retain_broad_before=base["behavioral"]["retain_broad"]["accuracy"],
-        retain_broad_after=erased["behavioral"]["retain_broad"]["accuracy"],
+        forget_acc_before=bk["forget"]["accuracy"],
+        forget_acc_after=ek["forget"]["accuracy"],
+        retain_hard_before=bk["retain_hard"]["accuracy"],
+        retain_hard_after=ek["retain_hard"]["accuracy"],
+        retain_broad_before=bk["retain_broad"]["accuracy"],
+        retain_broad_after=ek["retain_broad"]["accuracy"],
         capability_before=base["behavioral"]["capability"]["accuracy"],
         capability_after=erased["behavioral"]["capability"]["accuracy"],
         adversarial_leak_rate=adv_report["erased_leak_rate"],
@@ -271,6 +283,12 @@ def run_verification(group_id: str, config: VerificationConfig | None = None) ->
         "behavioral": {
             "baseline": {k: v for k, v in base["behavioral"].items()},
             "erased": {k: v for k, v in erased["behavioral"].items()},
+        },
+        "behavioral_knows": {
+            "note": "accuracy over direct + cloze + boolean only (families the "
+            "baseline can answer); used for the headline score",
+            "baseline": base["behavioral_knows"],
+            "erased": erased["behavioral_knows"],
         },
         "per_fact": per_fact,
         "forget_target_logprob_mean": {

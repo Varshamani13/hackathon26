@@ -87,3 +87,18 @@ def test_rank_auc() -> None:
     assert rank_auc([1, 2, 3], [1, 2, 3]) == 0.5
     assert rank_auc([5, 6], [1, 2]) == 1.0
     assert rank_auc([], [1]) == 0.5
+
+
+def test_retrace_score_to_dict_is_json_safe() -> None:
+    import json
+
+    s = compute_score(
+        forget_acc_before=1.0, forget_acc_after=0.0,
+        retain_hard_before=0.9, retain_hard_after=0.88,
+        retain_broad_before=0.9, retain_broad_after=0.9,
+        capability_before=0.8, capability_after=0.8,
+        adversarial_leak_rate=0.0,
+    )
+    d = s.to_dict()
+    assert set(d) >= {"forget_efficacy", "retain_preservation", "retrace_score_weighted"}
+    json.dumps(d)  # must not raise

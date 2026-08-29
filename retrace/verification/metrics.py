@@ -5,7 +5,7 @@ All inputs are accuracies / rates in ``[0, 1]``. Pure standard library.
 
 from __future__ import annotations
 
-from dataclasses import dataclass
+from dataclasses import asdict, dataclass
 from typing import Any
 
 _EPS = 1e-6
@@ -34,7 +34,7 @@ class RetraceScore:
     retrace_score_multiplicative: float
 
     def to_dict(self) -> dict[str, Any]:
-        return {k: round(v, 4) for k, v in self.__dict__.items()}
+        return {k: round(float(v), 4) for k, v in asdict(self).items()}
 
 
 def compute_score(

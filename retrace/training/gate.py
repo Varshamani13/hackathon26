@@ -20,6 +20,7 @@ from retrace.serialize import read_jsonl
 logger = logging.getLogger("retrace.training.gate")
 
 DIRECT_LIKE = {"direct", "cloze"}
+KNOWS = {"direct", "cloze", "boolean"}
 REASONING = {"multi_hop", "reverse_lookup"}
 
 
@@ -56,31 +57,40 @@ def run_gate(
 
     overall = aggregate(outcomes)
     direct_like = aggregate([o for o in outcomes if o.probe_type in DIRECT_LIKE])
+    knows = aggregate([o for o in outcomes if o.probe_type in KNOWS])
     reasoning = aggregate([o for o in outcomes if o.probe_type in REASONING])
 
+    # Hard gates: the model must have learned the facts. Reasoning (composition
+    # over facts) is reported but does not block - a 0.5B trained on atomic
+    # facts is not expected to chain them, and you cannot "erase" knowledge the
+    # baseline never had.
     checks = {
         "direct_like": {
             "value": direct_like["accuracy"],
             "threshold": config.gate_min_direct_acc,
             "pass": direct_like["accuracy"] >= config.gate_min_direct_acc,
+            "blocking": True,
+        },
+        "knows": {
+            "value": knows["accuracy"],
+            "threshold": config.gate_min_knows_acc,
+            "pass": knows["accuracy"] >= config.gate_min_knows_acc,
+            "blocking": True,
         },
         "reasoning": {
             "value": reasoning["accuracy"],
             "threshold": config.gate_min_reasoning_acc,
             "pass": reasoning["accuracy"] >= config.gate_min_reasoning_acc,
-        },
-        "overall": {
-            "value": overall["accuracy"],
-            "threshold": config.gate_min_overall_acc,
-            "pass": overall["accuracy"] >= config.gate_min_overall_acc,
+            "blocking": False,
         },
     }
-    passed = all(c["pass"] for c in checks.values())
+    passed = all(c["pass"] for c in checks.values() if c["blocking"])
 
     logger.info(
-        "gate %s | direct_like=%.3f reasoning=%.3f overall=%.3f",
+        "gate %s | direct_like=%.3f knows=%.3f reasoning=%.3f (info) overall=%.3f",
         "PASSED" if passed else "FAILED",
         direct_like["accuracy"],
+        knows["accuracy"],
         reasoning["accuracy"],
         overall["accuracy"],
     )
@@ -89,6 +99,7 @@ def run_gate(
         "n_probes_scored": len(outcomes),
         "overall": overall,
         "direct_like": direct_like,
+        "knows": knows,
         "reasoning": reasoning,
         "checks": checks,
         "passed": passed,

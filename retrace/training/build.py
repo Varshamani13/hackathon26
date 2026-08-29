@@ -31,9 +31,10 @@ class BaselineResult:
         verdict = "PASSED" if self.gate_passed else "FAILED"
         lines = [f"baseline model gate {verdict}"]
         for k, d in self.gate_report.get("checks", {}).items():
+            tag = "" if d.get("blocking", True) else " (info only)"
             lines.append(
                 f"  {k:12s} {d['value']:.3f}  (>= {d['threshold']:.2f})  "
-                f"{'ok' if d['pass'] else 'LOW'}"
+                f"{'ok' if d['pass'] else 'LOW'}{tag}"
             )
         return "\n".join(lines)
 

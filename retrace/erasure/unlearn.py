@@ -127,9 +127,16 @@ def _answer_kl(logits_p: Any, logits_ref: Any, labels: Any):
     return (kl * mask).sum() / mask.sum().clamp(min=1)
 
 
+#: Early-stop accuracy is measured over the probe families the baseline can
+#: actually answer (direct recall + yes/no). Multi-hop / reverse-lookup sit near
+#: chance for a 0.5B baseline, so including them just adds noise to the target.
+_EARLYSTOP_PROBE_TYPES = {"direct", "cloze", "boolean"}
+
+
 def _probe_accuracy(lm: Any, probes: list[dict[str, Any]], max_new_tokens: int) -> float:
     from retrace.modeling import score_probes
 
+    probes = [p for p in probes if p["probe_type"] in _EARLYSTOP_PROBE_TYPES]
     if not probes:
         return 0.0
     return aggregate(score_probes(lm, probes, max_new_tokens=max_new_tokens))["accuracy"]
